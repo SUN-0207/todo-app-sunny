@@ -1,0 +1,71 @@
+.item-container {
+  width: 100%;
+  background-color: purple;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10px 30px 10px;
+  border-radius: 10px;
+}
+
+.item-infor {
+  display: flex;
+  gap: 10px;
+} 
+
+.item-check {
+  width: 18px;
+  height: 18px;
+  align-self: center;
+}
+
+.item-text {
+  color: white;
+  font-size: 30px;
+}
+
+.item-day{
+  margin-left: 30px;
+  color: yellow;
+  font-size: 30px;
+}
+
+.item-icon {
+  display: flex;
+  gap: 20px;  
+  background-color: transparent;
+  font-size: 25px;
+}
+
+.icon-pen:hover,
+.icon-trash:hover{
+  color: white;
+}
+
+.modal-container {
+  min-width: 80px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-input input{
+  font-size: 25px;
+}
+
+.modal-button {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.modal-button button {
+  padding: 5px;
+  font-size: 20px;
+}
+
