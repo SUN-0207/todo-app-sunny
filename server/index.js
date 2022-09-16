@@ -1,7 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const apiRoutes = require("./routes/routes");
+const todoRoutes = require("./routes/TodoRoutes");
+const userRoutes = require("./routes/userRoutes");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -24,7 +25,8 @@ mongoose
     console.log("There is some problem with DB Connection. Please try again.");
   });
 
-app.use("/", apiRoutes);
+app.use("/api/todos", todoRoutes);
+app.use("/api/users", userRoutes);
 
 app.listen(PORT, (err) => {
   if (err) console.log("Error in server setup.");
